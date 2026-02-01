@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="row">
+   {% for laptop in laptops %}
+   <div class="col-md-6 mb-3">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title"> {{laptop.name}}</h5>
+                <p class="card-text"> {{laptop.description}}</p>
+                <p> <strong>Precio desde</strong>: ${{laptop.price_starting}}</p>
+                 <p> <strong>Laptops disponibles</strong>: {{laptop.laptop_types}}</p>
+            </div>
+        </div>
+   </div>  
+   {% endfor %}
+</div>
+{% endblock %}

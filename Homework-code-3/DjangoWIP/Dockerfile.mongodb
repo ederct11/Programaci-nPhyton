@@ -1,0 +1,15 @@
+FROM mongo:7
+
+# Crear directorio para datos persistentes
+WORKDIR /data/db
+
+# Variables de entorno opcionales
+# (Se pueden sobrescribir al ejecutar el contenedor)
+ENV MONGO_INITDB_DATABASE=laptop_django
+
+# Exponer puerto de MongoDB
+EXPOSE 27017
+
+# MongoDB se inicia automáticamente con la imagen base
+# No necesitamos CMD porque mongo:7 ya lo tiene configurado
+
