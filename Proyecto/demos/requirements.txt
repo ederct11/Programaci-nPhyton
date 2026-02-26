@@ -1,4 +1,0 @@
-# Requisitos para ejecutar los demos (fuera de Docker)
-redis==5.0.1
-Pillow==10.1.0
-
