@@ -1,0 +1,11 @@
+# Procesamiento de imágenes
+Pillow==10.1.0
+
+# Redis
+redis==5.0.1
+
+# Utilidades
+python-dotenv==1.0.0
+
+
+
